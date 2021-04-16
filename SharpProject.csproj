@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelloFsharp\HelloFsharp.fsproj" />
+    <ProjectReference Include="..\HelloQSharp\HelloQSharp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FSharp">
+      <HintPath>bin\Debug\net5.0\FSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
