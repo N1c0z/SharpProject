@@ -6,8 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HelloFsharp\HelloFsharp.fsproj" />
-    <ProjectReference Include="..\HelloQSharp\HelloQSharp.csproj" />
+    <Compile Remove="HelloFsharp\**" />
+    <Compile Remove="HelloQSharp\**" />
+    <EmbeddedResource Remove="HelloFsharp\**" />
+    <EmbeddedResource Remove="HelloQSharp\**" />
+    <None Remove="HelloFsharp\**" />
+    <None Remove="HelloQSharp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="HelloFsharp\HelloFsharp.fsproj" />
+    <ProjectReference Include="HelloQSharp\HelloQSharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>
