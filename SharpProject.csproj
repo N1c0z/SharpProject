@@ -15,8 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="HelloFsharp\HelloFsharp.fsproj" />
-    <ProjectReference Include="HelloQSharp\HelloQSharp.csproj" />
+    <None Remove="Library.fs" />
+    <None Remove="Library.qs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="HelloFsharp.fsproj" />
+    <ProjectReference Include="HelloQSharp.csproj" />
   </ItemGroup>
 
   <ItemGroup>
